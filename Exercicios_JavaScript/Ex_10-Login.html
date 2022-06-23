@@ -1,0 +1,58 @@
+<!-- Heitor Lorenção Busato - 2015207975 -->
+<!--	Ex 10   -->
+<html>
+<head>
+
+<script language="Javascript">
+
+var usuario = ['administrador', 'professor', 'aluno', 'estagiario', 'funcionario', 'pesquisador', 'publico'];
+var senha = ['00000001', '00000002', '00000003', '00000004', '00000005', '00000006', '00000007', '00000008'];
+
+function Validar(){
+	var user = (document.getElementById("mySelect").value);
+	var pass = (document.getElementById("senha").value);
+	var bool;
+	
+	for (i = 0; i < usuario.length; i++){
+		if(pass.length == 8){
+			if((usuario[i] == user)&&(senha[i] == pass)){
+				window.open('Contato.html');
+				bool = true;
+			}
+		}
+		
+	}
+	if(bool != true)
+	alert("Senha Incorreta!");
+}
+
+</script>
+
+
+<body>
+
+<form name="formulario">
+	<div>
+	<label for="login">Login: </label>
+	<select name="selectName" id="mySelect">
+		<option value="administrador"selected>Administrador</option>
+		<option value="professor">Professor</option>
+		<option value="aluno">Aluno</option>
+		<option value="estagiario">Estagiario</option>
+		<option value="funcionario">Funcionario</option>
+		<option value="pesquisador">Pesquisador</option>
+	<option value="publico">Publico</option>
+	</select>
+	</div>
+		<div>
+			<label for="senha">Senha: </label>
+			<input type="text" id="senha"/>
+			<div>
+			<button onclick="Validar()">Logar</button>
+			</div>
+		</div>
+</form>
+	
+</head>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!-- Heitor Lorenção Busato - 2015207975 -->
+<!--	Ex 06   -->
+<html>
+<head>
+<script language="Javascript">
+
+function Verificar(){
+
+var today = new Date();
+var dia = String(today.getDate()).padStart(2, '0');
+var mes = String(today.getMonth() + 1).padStart(2, '0');
+var ano = today.getFullYear();
+
+today = mes + '/' + dia + '/' + ano;
+
+var date1 = new Date(today);
+var date2 = new Date(document.getElementById("date").value);
+var timeDiff = Math.abs(date2.getTime() - date1.getTime());
+var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+var dias = diffDays;
+var ano = parseInt(dias/365);
+var mes = parseInt((dias % 365)/30);
+var dia = ((dias % 365)%30);
+alert("Restam: "+ ano + " ano(s), " + mes +" mes(es) e "+ dia + " dia(s).");
+
+}
+
+</script>
+
+</head>
+<body>
+
+<form name="formulario">
+    <div>
+        <label for="date">Data:</label>
+        <input type="date" id="date" />
+    </div>
+		<tr>
+			<td>
+				<button onclick="Verificar();">Verificar </button>
+			</td>
+		</tr>
+</form>
+
+</body>
+</html>

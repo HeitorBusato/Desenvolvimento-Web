@@ -1,0 +1,91 @@
+<!-- Heitor Lorenção Busato, Isamara Leal -->
+
+<!--	Ex 02    -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    	<meta charset="utf-8" />
+</head>
+
+<body>
+
+	<p id="paragrafo">123 <span>teste</span> 123 <span>Lorem <strong>negrito</strong></span> 123</p>
+	
+	<ul>
+        	<li>111</li>
+        	<li>222</li>
+        	<li id="item">333</li>
+        	<li>444</li>
+        	<li>555</li>
+        	<li>666</li>
+        	<li>777</li>
+        	<li>888</li>
+    	</ul>
+		
+		<br>1. Exiba apenas o texto da tag com id=paragrafo (sem tags).
+			<button id="btn1">Exibir</button>
+		<br>
+		<br>2. Exiba em tela o conteudo dentro das tags span.
+			<button id="btn2">Exibir</button>
+		<br>
+		<br>3. Obtenha o elemento li com o texto 666 dentro dele e exiba esse valor.
+			<button id="btn3">Exibir</button>
+		<br>		
+		<br>4. Informe o Elemento: <input type="text" id="elemento"/>
+			<button id="btn4">Exibir</button>
+		<br>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+			$(function(){
+						$("#btn1").click(function(){
+							var texto = $('#paragrafo');
+							var i;
+							var y = "";
+							for (i=0; i < texto.length; i++) {
+							y = (y + texto[i].textContent) ;
+								}
+							alert(y);	
+						});
+							
+						$("#btn2").click(function(){
+							var x = $('span');
+							var i;
+							var y = "";
+							for (i=0; i < x.length; i++) {
+							y = (y + x[i].textContent) ;
+								}
+							alert(y);	
+						});
+					
+						$("#btn3").click(function(){
+							var x = $('li');
+							var i;
+							var y = "";
+								for (i=0; i < x.length; i++) {
+									if(x[i].textContent == "666"){
+										y = x[i].textContent;
+										}
+								}
+								alert(y);
+						});
+					
+						$("#btn4").click(function(){
+							
+							var opcao = $("#elemento").val();
+							if(opcao=="li"){
+								var texto = document.getElementById("item").innerHTML;
+								alert(texto);					
+									}else{
+								var x = document.getElementsByTagName(opcao);
+								var conteudotag = "";
+								for (i=0; i < x.length; i++) {
+								conteudotag = (conteudotag + x[i].innerHTML);
+								}
+								alert(conteudotag);
+				}
+						});
+			});
+	</script>	
+</body>
+</html>

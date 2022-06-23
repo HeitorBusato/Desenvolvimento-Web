@@ -1,0 +1,56 @@
+<!-- Heitor Lorenção Busato - 2015207975 -->
+<!--	Ex 03   -->
+<html>
+<head>
+<title>Testando Javascript</title>
+<script language="Javascript">
+var string = prompt( 'Digite uma data no formato XX/XX/XXXX:','');
+var vetor = string.split("/");
+for (i = 0; i < vetor.length; i++){
+	vetor[i] = vetor[i].split(";");
+}
+var mes;
+	switch(parseInt(vetor[1])){
+	case 1:
+		mes = 'janeiro';
+		break;
+	case 2:
+		mes = 'Fevereiro';
+		break;
+	case 3:
+		mes = 'Março';
+		break;
+	case 4:
+		mes = 'Abril';
+		break;
+	case 5:
+		mes = 'Maio';
+		break;
+	case 6:
+		mes = 'Junho';
+		break;
+	case 7:
+		mes = 'Julho';
+		break;
+	case 8:
+		mes = 'Agosto';
+		break;
+	case 9:
+		mes = 'Setembro';
+		break;
+	case 10:
+		mes = 'Outubro';
+		break;
+	case 11:
+		mes = 'Novembro';
+		break;
+	case 12:
+		mes = 'Dezembro';
+		break;
+	default:
+		document.write("Mês inexistente!");
+}
+document.write(vetor[0] + ' de ' + mes + ' de ' + vetor[2]);
+</script>
+</head>
+</html>

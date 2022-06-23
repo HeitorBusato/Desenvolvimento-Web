@@ -1,0 +1,32 @@
+<!-- Heitor Lorenção Busato - 2015207975 -->
+
+<!--	Ex 04   -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ecommerce</title>   
+</head>
+<body>
+	<div align="center">
+		<img src="boneco.jpg" style="border-radius: 50%; width:180px"><br>
+		<!-- a tag <span> é uma alternativa ao uso da DIV, pois ele não quebra o texto' -->
+		<p> Descrição: Boneco do Rodrigo </p>
+		<p> Valor: R$ 75,00 </p>
+		<p> Valor da Parcela: R$ <span id="total"> 75,00 </span> </p>		
+		
+		Nº de Parcelas: <input type="number" value="1" min="1" max="10" id="qtd" onchange="calculaQtd();"> <button type="button"> Comprar </button>	
+		
+		<script>
+			function calculaQtd()
+			{
+				var valor = 75;
+				var qtd = document.getElementById("qtd").value;
+				total = (valor / qtd);				
+				document.getElementById("total").innerHTML = total;
+			}
+		</script>
+		
+	</div>
+<body>
+</html>

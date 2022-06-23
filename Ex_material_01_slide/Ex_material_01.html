@@ -1,0 +1,197 @@
+<!-- Heitor Lorenção Busato - 2015207975 -->
+
+<!--               Ex 1
+<html>
+<head>
+<title>Testando o método prompt</title>
+<script language="Javascript">
+var idade = prompt( 'Informe sua idade','');
+if (idade<18){
+	document.write( 'O usuário é menor de idade' );
+}
+else{
+	document.write( 'O usuário é maior de idade' );
+}
+</script>
+</head>
+</html>
+-->
+
+<!--                Ex 2
+<html>
+<head>
+<title>Testando o método prompt</title>
+<script language="Javascript">
+var num = prompt( 'Digite um número','');
+var r = (num % 2);
+if (r == 0){
+	document.write( 'O número digitado é par' );
+}
+else{
+	document.write( 'O número digitado é impar' );
+}
+</script>
+</head>
+</html>
+-->
+
+<!--				Ex 3
+<html>
+<head>
+<title>Testando o método prompt</title>
+<script language="Javascript">
+var num1 = prompt( 'Digite o primeiro número','');
+var num2 = prompt( 'Digite o segundo número','');
+if (num1 == num2){
+	document.write( 'Os números são iguais' );
+	}
+	else if(num1 > num2){
+	document.write( 'O primeiro número é maior' );
+	}else
+	document.write( 'O segundo número é maior' );
+</script>
+</head>
+</html>
+-->
+
+<!--				Ex 4
+<html>
+<head>
+<title>Testando estrutura de repetição</title>
+<script language="Javascript">
+var num1 = 201;
+var num2 = 300;
+for(i = num1 ; i <= num2 ; i++){
+	if(i % 2 == 0){
+		document.write( i + ' ' );
+	}
+}
+</script>
+</head>
+</html>
+-->
+
+<!--				Ex 5
+<html>
+<head>
+<title>Testando estrutura de repetição</title>
+<script language="Javascript">
+var i = 201;
+var num2 = 300;
+while(i < num2){
+	if(i % 2 == 0){
+		document.write( i + ' ' );
+	}
+	i++;
+}
+</script>
+</head>
+</html>
+-->
+
+<!--				Ex 6
+<html>
+<head>
+<title>Testando estrutura de repetição</title>
+<script language="Javascript">
+var num1 = prompt( 'Digite um número','');
+var opr = parseInt(window.prompt( 'Digite um operador: 1 para /, 2 para -, 3 para +, 4 para *',''));
+var num2 = prompt( 'Digite um número','');
+
+switch(opr){
+	case 1:
+		var r = (num1 / num2);
+		var resultado = window.prompt("O resultado é: ", r);
+		break;
+	case 2:
+		var r = (num1 - num2);
+		var resultado = window.prompt("O resultado é: ", r);
+		break;
+	case 3:
+		var r = (parseInt(num1)) + (parseInt(num2));
+		var resultado = window.prompt("O resultado é: ", r);
+		break;
+	case 4:
+		var r = (num1 * num2);
+		var resultado = window.prompt("O resultado é: ", r);
+		break;
+	default:
+		document.write("Operador inexistente!");
+		
+}
+</script>
+</head>
+</html>
+-->
+
+
+<!--	Ex em sala Array teste de saida - Imprime o indice do vetor e seu valor
+<html>
+<head>
+<title>Testando Arrays</title>
+<script language="Javascript">
+var meuArray = new Array(10);
+var i;
+for(i = 0; i <=9 ; i++){
+	meuArray[i] = i * 2;
+}
+for(i = 0; i <=9 ; i++){
+	document.write("valor do array no indice" + i + " igual a " + meuArray[i] + "<br>");
+}
+</script>
+</head>
+</html>
+-->
+
+<!--
+<html>
+<head>
+<title>Testando Arrays</title>
+<script language="Javascript">
+var NumElementos = 10, soma = 0 , media, i;
+var meuArray = new Array(NumElementos);
+
+for(i = 0; i <=NumElementos-1 ; i++){
+	meuArray[i] = parseInt( window.prompt("Digite o valor: "," ") );
+	soma = soma + meuArray[i];
+}
+	media = soma / NumElementos;
+	window.alert("A media e " + media);
+}
+</script>
+</head>
+</html>
+-->
+
+<html>
+<head>
+<title>Testando Arrays</title>
+<script language="Javascript">
+var n = prompt( 'Informe a quantidade de alunos na sala: ','');
+var meuArray = new Array(n);
+var i, media;
+var soma = 0;
+for(i = 0; i <= n-1; i++){
+	meuArray[i] = parseInt( window.prompt("Informe a nota do " + (i + 1) + "º aluno: " ));
+	soma = soma + meuArray[i];
+}
+media = soma/n;
+document.write(" Número de Alunos: " + i + "<br>");
+document.write("Média: " + media);
+document.write("<br>");
+
+document.write("<tr><td><b>Aluno</b> " + "</td>");
+		document.write("<td>" + "<b>Nota</b>" + "</td></tr>");
+for(i = 0; i <= n-1; i++){
+	 document.write("<tr><td>" + i + "</td>");
+		document.write("<td>" + meuArray[i] + "</td></tr>");
+}
+
+
+</script>
+</head>
+</html>
+
+
+
+

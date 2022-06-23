@@ -1,0 +1,63 @@
+<!-- Heitor Lorenção Busato, Isamara Leal -->
+<!--	Ex 05   -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boletim Escolar</title> 
+</head>
+<body>
+	
+	<form onsubmit="return false">
+		<label for="n1">Digite o Nome do Aluno:</label>
+		<input type="text" name="n1" id="nome">
+	<br/>
+		<label for="n1">Digite a Primeira Nota:</label>
+		<input type="text" name="n1" id="n1">
+	<br
+		<label for="n2">Digite a Segunda Nota:</label>
+		<input type="text" name="n1" id="n2">
+	<br/>	
+		<label for="n3">Digite a Terceira Nota:</label>
+		<input type="text" name="n1" id="n3">	
+	<br/>
+		<button> Calcular Media </button>
+	</form>
+		
+		
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+			$(function(){
+				$("button").click(function(){
+					var name = $("#nome").val();
+					var n1 = parseFloat($("#n1").val());
+					var n2 = parseFloat($("#n2").val()); 
+					var n3 = parseFloat($("#n3").val()); 
+					var media = ((n1 + n2 + n3)/3);
+				
+					if(media<5){
+					
+						$("p").replaceWith("<p>REPROVADO PELO RODRIGO</p>");
+						$("p").css("color", "yellow");
+						
+						} else {
+							if(media<7){
+								
+								$("p").replaceWith("<p>RECUPERAÇÃO</p>");
+								$("p").css("color", "yellow");
+								} else {
+									if(media>=7){
+									
+									$("p").replaceWith("<p>APROVADO</p>");
+									$("p").css("color", "green");
+									}
+							}
+						}		
+				});
+			});
+		</script>	
+			<p></p>
+<body>
+</html>

@@ -1,0 +1,43 @@
+<!-- Heitor Lorenção Busato, Isamara Leal -->
+
+<!--  Ex 01  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+$(function (testandoArvoreDOM) {
+
+	$("span").click(function(){
+		    var element = document.documentElement.lastChild;
+			alert("Eu sou o nodo" + element.nodeName);
+			var outroElemento = $('h1')[0];
+			alert("Eu sou o nodo " + outroElemento.nodeValue);
+			var filho = outroElemento.firstChild;
+			alert("Eu sou o nodo " + filho.nodeValue);
+	  });
+});
+
+</script>
+<title>
+Teste de Árvore DOM
+</title>
+</head>
+<body>
+<h1>Teste de Título</h1>
+<p>
+Você conhece sobre árvores DOM? Se não conhece aprenda em
+<a href=“http://www.javascript.com”> www.javascript.com </a>
+e seja o mais novo entendido sobre o assunto.
+</p>
+<span>Clique aqui para Testar o Acesso a Árvore DOM</span>
+</body>
+</html>
+
+<!--
+a)O último elemento filho (node).
+b)Por causa da concatenação com o element.nodeName, o nome node do elemento está vazio retornando null.
+c)h1
+-->

@@ -1,0 +1,35 @@
+<!-- Heitor Lorenção Busato - 2015207975 -->
+<!-- Ex 02 -->
+
+<html>
+<head>
+<script language="Javascript">
+var salario = prompt( 'Informe o salario','');
+var percentual, aumento, novo_salario;
+    if (salario <= 280){
+		percentual = 20;
+		}else{
+			if (salario <= 700){
+				percentual = 15;
+				}
+				else{
+					if (salario <= 1500){
+						percentual = 10;
+					}
+					else{
+						percentual = 5;					
+					}
+				}
+			}
+    document.write('Salario original: R$ '+ salario + "<br>");
+	document.write('Percentual: ' + percentual + '%' + "<br>");
+
+    percentual = (percentual/100);
+    aumento = (percentual * salario);
+    novo_salario = ((parseInt(salario)) + (parseInt(aumento)));
+    
+    document.write('Aumento: R$ ' + aumento + "<br>");
+    document.write('Novo salário: R$ ' + novo_salario + "<br>");
+</script>
+</head>
+</html>

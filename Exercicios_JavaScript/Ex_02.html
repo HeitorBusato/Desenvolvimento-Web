@@ -1,0 +1,56 @@
+<!-- Heitor Lorenção Busato - 2015207975 -->
+<!--	Ex 02 -->
+<html>
+<head> 
+<style>
+div.a {
+  text-align: center;
+}
+</style>
+	<script type="text/javascript">
+
+function cor(){
+
+	document.bgColor=corF;
+ 	document.fgColor=corL;
+   
+}
+
+	var Time = new Date().getHours();
+
+	if (Time < 6){
+	
+		corF="blue";
+		corL="white";
+	
+	} else if (Time < 12){
+	
+		corF="white";
+		corL="black";
+
+	} else if (Time < 18){
+	
+		corF="yellow";
+		corL="black";   	
+
+	} else if (Time < 24) {
+		
+		corF="black";
+		corL="white";
+    	}
+</script>
+</head>
+
+<body>
+		<button onclick="cor();">Clique para aplicar </button>
+		<div class="a">
+			<h1>----------------------- Testando -----------------------</h1>
+		</div>
+
+</body>
+</html>
+
+
+
+
+

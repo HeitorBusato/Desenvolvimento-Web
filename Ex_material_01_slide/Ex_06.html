@@ -1,0 +1,35 @@
+<!-- Heitor Lorenção Busato - 2015207975
+
+<!--	Ex 6 -->
+<html>
+<head>
+<title>Testando estrutura de Controle</title>
+<script language="Javascript">
+var num1 = prompt( 'Digite o 1º número','');
+var opr = parseInt(window.prompt( 'Digite um operador: 1 para /, 2 para -, 3 para +, 4 para *',''));
+var num2 = prompt( 'Digite o 2º número','');
+
+switch(opr){
+	case 1:
+		var r = (num1 / num2);
+		var resultado = window.prompt("O resultado é: ", r);
+		break;
+	case 2:
+		var r = (num1 - num2);
+		var resultado = window.prompt("O resultado é: ", r);
+		break;
+	case 3:
+		var r = (parseInt(num1)) + (parseInt(num2));
+		var resultado = window.prompt("O resultado é: ", r);
+		break;
+	case 4:
+		var r = (num1 * num2);
+		var resultado = window.prompt("O resultado é: ", r);
+		break;
+	default:
+		document.write("Operador inexistente!");
+		
+}
+</script>
+</head>
+</html>

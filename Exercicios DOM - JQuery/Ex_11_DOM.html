@@ -1,0 +1,50 @@
+<!-- Heitor Lorenção Busato, Isamara Leal -->
+
+<!--	Ex 11   -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Zebra</title>
+<style>
+  .zebraon{background:silver}
+  
+  table, th, td {
+  border: 1px solid black;
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(function(){
+	$(document).ready(function() {
+		var zebrar = $('.zebra tbody tr');
+		for(var i=0;i<zebrar.length;i+=2)
+			zebrar[i].className='zebraon'
+	});
+});
+</script>
+</head>
+
+<body>
+<table class="zebra">
+  <thead><tr>
+      <th>Vendedor</th> <th>Total</th>
+    </tr></thead>
+  <tbody><tr>
+      <td>Manoel</td>   <td>12.300,00</td>
+    </tr><tr>
+      <td>Joaquim</td>  <td>21.300,00</td>
+    </tr><tr>
+      <td>Maria</td>    <td>13.200,00</td>
+    </tr><tr>
+      <td>Marta</td>    <td>32.100,00</td>
+    </tr><tr>
+      <td>Antonio</td>  <td>23.100,00</td>
+    </tr><tr>
+      <td>Pedro</td>    <td>31.200,00</td>
+    </tr></tbody>
+</table>
+</body>
+</html>

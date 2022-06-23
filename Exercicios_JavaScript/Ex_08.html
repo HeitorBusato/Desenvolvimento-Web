@@ -1,0 +1,78 @@
+<!-- Heitor Lorenção Busato - 2015207975 -->
+<!--	Ex 08   -->
+<html>
+<head>
+
+<script language="Javascript">
+
+ var titulo = (document.getElementById("titulo").value);
+ var h1 = (document.getElementById("subtitulo1").value);
+ var h2 = (document.getElementById("subtitulo2").value);
+ var texto1 = (document.getElementById("texto1").value);
+ var texto2 = (document.getElementById("texto2").value);
+ var cor1 = (document.getElementById("cor2").value);
+ var cor2 = (document.getElementById("cor3").value);
+ var cor3 = (document.getElementById("cor4").value);
+ var cor4 = (document.getElementById("cor5").value);
+
+function Preview(){
+	
+}
+
+function Gerar_Pagina(){
+
+  var x = ("testando");
+  document.getElementById("codigo").innerHTML = x;
+	
+}
+
+</script>
+
+<body>
+
+
+<form name="formulario">
+    <div>
+        <label for="titulo">Titulo:</label>
+        <input type="text" id="titulo" />
+    </div>
+	<div>
+        <label for="titulo">Subtitulo:</label>
+        <input type="subtitulo" id="subtitulo1" />
+		<label for="cor">Cor:</label>
+        <input type="text" id="cor2" />
+    </div>
+	<div>
+        <label for="texto">Texto:</label>
+        <textarea id="texto1" name="texto1" rows="5" cols="33"> </textarea>
+		<label for="cor">Cor:</label>
+        <input type="text" id="cor3" />
+    </div>
+	<div>
+        <label for="titulo">Subtitulo:</label>
+        <input type="subtitulo" id="subtitulo2" />
+		<label for="cor">Cor:</label>
+        <input type="text" id="cor4" />
+    </div>
+    <div>
+        <label for="texto">Texto:</label>
+        <textarea id="texto2" name="texto2" rows="5" cols="33">	</textarea>
+		<label for="cor">Cor:</label>
+        <input type="text" id="cor5" />
+    </div>
+		<div>
+			<div>
+				<button onclick="Preview()">Preview</button>
+			</div>
+		</div>
+</form>
+		<div>
+			<div>
+				<textarea id="codigo"> </textarea>
+			</div>
+			<button onclick="Gerar_Pagina()">Gerar Pagina</button>
+		</div>
+	
+</head>
+</body>
+</html>

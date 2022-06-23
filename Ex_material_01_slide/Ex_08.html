@@ -1,0 +1,19 @@
+<!-- Heitor Lorenção Busato - 2015207975
+
+<!--	Ex 08 -->
+<html>
+<head>
+<title>Ex em sala Array teste de saida - Imprime a media do valores do array</title>
+<script language="Javascript">
+var NumElementos = 10, soma = 0 , media, i;
+var meuArray = new Array(NumElementos);
+
+for(i = 0; i <=NumElementos-1 ; i++){
+	meuArray[i] = parseInt( window.prompt("Digite o valor: "," ") );
+	soma = soma + meuArray[i];
+}
+	media = soma / NumElementos;
+	window.alert("A media e " + media);
+</script>
+</head>
+</html>

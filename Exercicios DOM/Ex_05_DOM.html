@@ -1,0 +1,56 @@
+<!-- Heitor Lorenção Busato - 2015207975 -->
+
+<!--	Ex 05   -->
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boletim Escolar</title> 
+</head>
+<body>
+	
+	<form>
+		<label for="n1">Digite o Nome do Aluno:</label>
+		<input type="text" name="n1" id="nome">
+	<br>
+		<label for="n1">Digite a Primeira Nota:</label>
+		<input type="text" name="n1" id="n1">
+	<br>
+		<label for="n2">Digite a Segunda Nota:</label>
+		<input type="text" name="n1" id="n2">
+	<br>	
+		<label for="n3">Digite a Terceira Nota:</label>
+		<input type="text" name="n1" id="n3">	
+	<br>
+		<button type="button" onclick="media()"> Calcular Media </button>
+	</form>
+	
+	<script>
+			function media()
+			{
+				var name = document.getElementById("nome").value;
+				var n1 = document.getElementById("n1").value;
+				var n2 = document.getElementById("n2").value; 
+				var n3 = document.getElementById("n3").value; 
+				var media = ((parseFloat(n1) + parseFloat(n2) + parseFloat(n3))/3);
+				
+					if(media<5){
+						var str = new String("REPROVADO PELO RODRIGO");
+						document.write(str.fontcolor( "yellow" ));
+							
+						} else {
+							if(media<7){
+								var str = new String("RECUPERAÇÃO");
+								document.write(str.fontcolor( "yellow" ));
+							
+								} else {
+									var str = new String("APROVADO");
+									document.write(str.fontcolor( "green" ));
+							}
+						}		
+			}
+		</script>			
+	
+<body>
+</html>

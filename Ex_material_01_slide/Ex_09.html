@@ -1,0 +1,36 @@
+<!-- Heitor Lorenção Busato - 2015207975
+
+<!--	Ex 09 -->
+<html>
+<head>
+<title>Testando Arrays</title>
+</head>
+<body>
+
+<table border="1">
+
+<script language="Javascript">
+var n = prompt( 'Informe a quantidade de alunos na sala: ','');
+var meuArray = new Array(n);
+var i, media;
+var soma = 0;
+for(i = 0; i <= n-1; i++){
+	meuArray[i] = parseInt( window.prompt("Informe a nota do " + (i + 1) + "º aluno: " ));
+	soma = soma + meuArray[i];
+}
+media = soma/n;
+document.write("<b>Número de Alunos: " + i + "</b>" + "<br>");
+document.write("<font color=\"red\"> Média: " + media + "</font>" + "<br>");
+document.write("<br>");
+
+document.write("<tr><td><b>Aluno</b> " + "</td>");
+		document.write("<td>" + "<b>Nota</b>" + "</td></tr>");
+for(i = 0; i <= n-1; i++){
+	 document.write("<tr><td>" + i + "</td>");
+		document.write("<td>" + meuArray[i] + "</td></tr>");
+}
+</script>
+
+</table>
+</body>
+</html>

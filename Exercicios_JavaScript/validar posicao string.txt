@@ -1,0 +1,6 @@
+var cep = "22.000-000";
+var cepFormatado = false;
+
+if(cep.indexOf(".") == 2 && cep.indexOf("-") == 6){
+    cepFormatado = true;
+}
