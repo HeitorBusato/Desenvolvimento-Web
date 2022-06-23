@@ -1,1 +1,0 @@
-dados = '[{"nome" : "Heitor", "CPF" : "14528720890"},{"id" : "01", "nome" : "Liquidificador", "preco" : "259.90", "quantidade" : "1"},{"id" : "02", "nome" : "TV", "preco" : "1590.90", "quantidade" : "1"},{"id" : "03", "nome" : "Tapete", "preco" : "59.90", "quantidade" : "1"},{"NC" : "22454353", "bandeira" : "mastercard", "codigo" : "25967"}]';
